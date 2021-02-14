@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href ="css/bootstrap.css"></link>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Produtos</a>
+        <button class="navbar-toggler" type="button" 
+        data-toggle="collapse" data-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Página inicial<span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" 
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gerenciar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Cadastro.html">Cadastro</a>
+                <a class="dropdown-item" href="Consulta.html">Consulta</a>
+    
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">   DASHBOARD - Bem vindo ao projeto final!</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container mt-3">
+        <h5>Seja bem vindo ao sistema!</h5>
+        <br/>
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Data de Início</label>
+                            <input type="text" id="dataMin" class="form-control" placeholder="dd/MM/yyyy">
+                        </div>
+                        <div class="col">
+                            <label>Data de Término</label>
+                            <input type="text" id="dataMax" class="form-control" placeholder="dd/MM/yyyy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button id="btnPesquisa" class="btn btn-success">
+                        Pesquisar Dados
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="graficoProdutos"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Referência de JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+
+    <script src="js/highcharts.js"></script>
+    <script src="js/highcharts-3d.js"></script>
+    <script src="js/exporting.js"></script>
+    <script src="js/export-data.js"></script>
+
+    <script src="scripts/formatting/date-formatting.js"></script>
+    <script src="scripts/environment.js"></script>
+    <script src="scripts/produto-dashboard.js"></script>
+</body>
+</html>
